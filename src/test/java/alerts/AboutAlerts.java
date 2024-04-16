@@ -43,7 +43,7 @@ public class AboutAlerts {
 	WebElement	ele=driver.findElement(By.xpath("//button[@onclick=\"jsPrompt()\"]"));
 	ele.click();
 	Alert alt=driver.switchTo().alert();
-	alt.sendKeys("hi hello");
+	alt.sendKeys("iam m prasannakumar");
 	Thread.sleep(2000);
 	alt.dismiss();
 		
