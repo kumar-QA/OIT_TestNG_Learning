@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="alerts.attribuets">
+      <class name="aboutframes.FrameCocnept">
         <methods>
-          <include name="login"/>
+          <include name="NormalFrame"/>
         </methods>
-      </class> <!-- alerts.attribuets -->
+      </class> <!-- aboutframes.FrameCocnept -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

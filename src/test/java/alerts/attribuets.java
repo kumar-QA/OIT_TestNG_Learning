@@ -7,7 +7,7 @@ public class attribuets {
 	
 	@Test
 	public void login() {
-		System.out.println("log
+		System.out.println("log");
 	}
 	
 	@Test(dependsOnMethods = "login",alwaysRun = true)

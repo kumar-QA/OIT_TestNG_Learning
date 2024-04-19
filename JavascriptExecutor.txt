@@ -1,0 +1,80 @@
+JavascriptExecutor:
+it is interface 
+inside these interface we have method:
+ 
+abstract executeAsyncScript();
+abstract executeScript();
+
+Remotewebdriver implements webdriver,javascriptexecutor,takescreenshot{
+get(),
+findelements
+findelement
+close
+quit()...13 method
+executeAsyncScript()
+executeScript()
+getscreenshotAs();
+}
+class chromiumDriver extends Remotewebdriver{
+}
+class chromedriver extends chromiumDriver{
+driver
+get(),
+findelements
+findelement
+close
+quit()...13 method
+executeAsyncScript()
+executeScript()--2--javascriptexecutor
+getscreenshotAs();---1 takescreenshot
+}
+
+why we need to use javascriptExecutor?
+1. to perfrom scroll opration on webpage 
+2.selenium--we can findthe elememts and we can perform operation on them--click/scroll/move in some situation it may not work as per excepected then we need to use Javascriptexecutor
+
+what we writing insied these javascriptexecutor interface /method
+executeAsyncScript()
+executeScript()
+  --->executeScript()--we are writing javascript inside these methods
+
+how to scroll a page using javascript?
+javascriptcode---window.scrollBy(x,y);
+
+package js;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class DeomForJs {
+	public static void main(String[] args) {
+	 WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://omayo.blogspot.com/");
+		
+  JavascriptExecutor js=((JavascriptExecutor)driver) ;      
+		js.executeScript("window.scrollBy(0,900);");
+		
+	WebElement ele=driver.findElement(By.xpath("//a[@href=\"https://omayo.blogspot.com/feeds/posts/default\"]"));
+//	ele.click();
+	WebElement ele1=driver.findElement(By.xpath("//a[@href=\"https://omayo.blogspot.com/feeds/posts/default\"]"));
+
+	WebElement ele2=driver.findElement(By.xpath("//a[@href=\"https://omayo.blogspot.com/feeds/posts/default\"]"));
+
+	WebElement ele3=driver.findElement(By.xpath("//a[@href=\"https://omayo.blogspot.com/feeds/posts/default\"]"));
+		js.executeScript("arguments[0].click();",ele,ele1,ele2,ele3);
+	}
+}
+
+TASk1: amzon website --scroll operation
+
+
+
+
+
+
+
+
+
