@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="aboutframes.FrameCocnept">
+      <class name="asseartionvalidation.DemoFroAsseration">
         <methods>
-          <include name="NormalFrame"/>
+          <include name="differenceAssert"/>
         </methods>
-      </class> <!-- aboutframes.FrameCocnept -->
+      </class> <!-- asseartionvalidation.DemoFroAsseration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

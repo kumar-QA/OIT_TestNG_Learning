@@ -1,0 +1,35 @@
+TestNg
+--------
+Asseration:validating the customer req is called as asserations
+
+how we are validating: by comparing expectedvalue and ActualValue
+
+Assert--it is predefined class
+ assertequal()
+asserttrue()
+assertfalse()
+
+how mant type Assertion?
+1.Hard Assert-----
+Ex:
+------
+Assert.assertEqual();
+
+2.softAssert--it is predefined class
+  assertequal()
+  asserttrue()
+  assertfalse()
+ex:
+SoftAssert s=new SoftAssert();
+	s.assertEquals(actualvalue, expectedvalue);
+	s.assertAll();
+
+differences b/w hard assert and soft assert
+
+hard assert                               soft assert
+1.no need to create object                1.need to create object
+2.asseration is failed below the code not exectued  2.it is executed
+3.immediately it will throw error                  3.it is in our hands where we need 
+                                                          to thow error(assertAll())
+
+
