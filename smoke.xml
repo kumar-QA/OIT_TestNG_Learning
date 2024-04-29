@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="smokeTestcase">
+    <classes>
+      <class name="alerts.attribuets">
+		  <methods>
+			  <include name="login"></include>
+		  </methods>
+      </class>
+      <class name="alerts.dump">
+		  <methods>
+			  <include name="m4"></include>
+			  <include name="m5"></include>
+		  </methods>
+	  </class>
+    </classes>
+  </test> 
+</suite> <!-- Suite -->

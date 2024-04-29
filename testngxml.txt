@@ -1,0 +1,20 @@
+testngxml
+----------
+it is a configuration file with the help these file i can run multiple class/multiple package at same time 
+or 
+by using testng xml file we can control the execution flow of testscript
+
+how to creat a testng xml file:
+-----------------------------------
+1.we create a file and name it as Testngxml
+2.by selecting some option (right click on the project-->select option TestNg-->select option --Convert to Testng)
+
+what thes testng xml file consit of?
+======================================
+suite----collection of test tags is called suiet
+test---collection of classes tages is called test
+classes--collection of class tags
+class---collection of methods tags
+methods---collection of include and exclude  tags
+include---to consider a testscript
+exclude--to ignore the testscript

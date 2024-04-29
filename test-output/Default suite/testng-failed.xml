@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="asseartionvalidation.DemoFroAsseration">
+      <class name="multiplewindowhandling.demoHandel">
         <methods>
-          <include name="differenceAssert"/>
+          <include name="verifyMultipleWindowFunctionality"/>
         </methods>
-      </class> <!-- asseartionvalidation.DemoFroAsseration -->
+      </class> <!-- multiplewindowhandling.demoHandel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

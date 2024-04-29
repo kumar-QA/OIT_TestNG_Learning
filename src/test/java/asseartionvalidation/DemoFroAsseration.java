@@ -12,7 +12,6 @@ public class DemoFroAsseration {
 
 	@Test
 	public void verifyLoginPage() {
-
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://admin-demo.nopcommerce.com/login");
@@ -69,8 +68,9 @@ public class DemoFroAsseration {
 		System.out.println("2");
 		SoftAssert s=new SoftAssert();
 		s.assertEquals("hi", "bye");
-		System.out.println("3");
 		s.assertAll();
+		System.out.println("3");
+		
 		System.out.println("4");
 		
 		

@@ -21,6 +21,11 @@ WebElement ele=driver.findElement(By.xpath("//a[@href=\"https://jqueryui.com/dra
 		
 	}
 	
+	@Test
+	public void m33() {
+		System.out.println("method m33");
+	}
+	
 	
 	
 }

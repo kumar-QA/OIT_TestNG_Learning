@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="alert(failed)">
+    <classes>
+      <class name="alerts.demoAnnotation">
+        <methods>
+          <include name="m3"/>
+        </methods>
+      </class> <!-- alerts.demoAnnotation -->
+    </classes>
+  </test> <!-- alert(failed) -->
+  <test thread-count="5" name="js(failed)">
+    <classes>
+      <class name="js.JSClick">
+        <methods>
+          <include name="clickOperation"/>
+        </methods>
+      </class> <!-- js.JSClick -->
+    </classes>
+  </test> <!-- js(failed) -->
+</suite> <!-- Failed suite [Suite] -->
